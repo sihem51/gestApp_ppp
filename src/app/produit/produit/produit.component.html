@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <h2>Produit</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>description</th>
+        <th>Prix</th>
+        <th>Quantiter</th>
+      </tr>
+    </thead>
+    <tbody>
+
+  <tr *ngFor = "let produit of produit " >
+        <td>{{produit.id}}</td>
+        <td>{{produit.nom}}</td>
+        <td>{{produit.description}}</td>
+        <td>{{produit.prix}}</td>
+        <td>{{produit.qte_stock}}</td>
+        <td><button (click) = " updateProduit(produit.id)" type="button" class="btn btn-primary">Edit</button>&nbsp;&nbsp;
+
+            </td>
+      </tr>
+
+
+    </tbody>
+  </table>
+  <button (click) = "addProduit()" type="button" class="btn btn-success">New Produit</button>
+</div>

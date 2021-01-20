@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+
+<div class="col-md-6 offset-md-3">
+  <h3> Create Produit</h3>
+  <form (ngSubmit) = "onsubmit()">
+
+
+
+
+     <div class="form-group">
+          <label>  idP</label>
+          <input type="text" class ="form-control" id = "identifiant"
+              [(ngModel)] = "produit.idP" name = "identifiant">
+      </div>
+      <div class="form-group">
+          <label>  Nom</label>
+          <input type="text" class ="form-control" id = "name"
+              [(ngModel)] = "produit.nom" name = "name">
+      </div>
+
+      <div class="form-group">
+          <label> description</label>
+          <input type="text" class ="form-control" id = "codfis"
+              [(ngModel)] = "produit.description" name = "codfis">
+      </div>
+      <div class="form-group">
+          <label> prix</label>
+          <input type="text" class ="form-control" id = "prix"
+              [(ngModel)] = "produit.prix" name = "prix">
+      </div>
+      <div class="form-group">
+          <label>qte_stock </label>
+          <input type="text" class ="form-control" id = "qte_stock"
+              [(ngModel)] = "produit.qte_stock" name = "qte_stock">
+      </div>
+
+      <button class = "btn btn-success" type ="submit">Submit</button>
+     
+
+  </form>
+  </div>
